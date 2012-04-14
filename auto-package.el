@@ -11,6 +11,7 @@
     (package-refresh-contents)))
 
 (defun auto-package-install (my-packages)
+  (auto-package-init)
   (dolist (p my-packages)
     (when (not (package-installed-p p))
       (package-install p))))

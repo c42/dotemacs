@@ -1,3 +1,4 @@
-C42 ENGINEERING
+= c42 engineering's ~/.emacs.d =
 
-.emacs.d
+- just checkout this directory and symlink it to ~/.emacs.d
+- read http://melpa.milkbox.net -- see "Customizations"
