@@ -49,17 +49,27 @@
                       magit)
   "A list of packages to ensure are installed at launch.")
 
-;; packages TODO: ruby-electric, textmate, smooth-scrolling
+;; packages TODO: maxframe
 
-;; custom TODO: home/end, mapping meta/alt, OS clipboard interop
+;; melpa packages TODO: ruby-electric, textmate, smooth-scrolling
+
+;; bug TODO: rspec-mode should autoload
+
+;; custom TODO: ctags, maxframe on start
 
 (auto-package-install my-packages)
 
-;; -------------------------------------------------------
-;; themes
-;; -------------------------------------------------------
+;; show line numbers
+(global-linum-mode t)
 
-(require 'molokai-theme)
+;; tabs are 2 spaces
+(setq-default tab-width 2)
+(setq-default indent-tabs-mode nil)
+
+(require 'environment)
 (require 'key-bindings)
 
-
+(require 'smooth-scrolling)
+(require 'duplicate-line)
+(require 'textmate)
+(textmate-mode)
