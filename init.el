@@ -7,7 +7,6 @@
                       starter-kit-lisp
                       starter-kit-bindings
                       starter-kit-eshell
-
                       ;; themes
                       color-theme-sanityinc-solarized
                       molokai-theme
@@ -15,6 +14,7 @@
                       ;; clojure
                       clojure-mode
                       clojure-test-mode
+
                       clojurescript-mode
 
                       ;; ruby
@@ -73,5 +73,5 @@
 (require 'duplicate-line)
 (require 'textmate)
 (textmate-mode)
-(ruby-electric-mode)
+(add-hook 'ruby-mode-hook 'ruby-electric-mode)
 (add-hook 'window-setup-hook 'maximize-frame t)
