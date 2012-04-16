@@ -33,4 +33,14 @@
     (setq auto-save-file-name-transforms
           `((".*" ,temporary-file-directory t)))
 
+
+;; respek c42 dotfiles, which are dotless
+(add-to-list 'auto-mode-alist '("zshrc" . sh-mode))
+(add-to-list 'auto-mode-alist '("bashrc" . sh-mode))
+
+
+;; turn off that fucking box
+(setq ring-bell-function 'ignore)
+
+
 (provide 'environment)

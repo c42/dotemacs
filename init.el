@@ -41,17 +41,19 @@
 
                       ;; editing
                       auto-complete
+                      smooth-scrolling
                       browse-kill-ring
                       undo-tree
                       yasnippet
                       
                       ;; utils
-                      magit)
+                      magit
+                      melpa)
   "A list of packages to ensure are installed at launch.")
 
 ;; packages TODO: maxframe
 
-;; melpa packages TODO: ruby-electric, textmate, smooth-scrolling
+;; melpa packages TODO: ruby-electric, textmate
 
 ;; bug TODO: rspec-mode should autoload
 
@@ -69,7 +71,7 @@
 (require 'environment)
 (require 'key-bindings)
 
-(require 'smooth-scrolling)
+;;(require 'smooth-scrolling)
 (require 'duplicate-line)
 (require 'textmate)
 (textmate-mode)
