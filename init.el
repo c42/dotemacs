@@ -1,10 +1,12 @@
 (setq load-path (cons "~/.emacs.d" load-path))
 (require 'auto-package)
 
-(defvar my-packages '(starter-kit
+(defvar my-packages '(melpa
+
+                      starter-kit
                       starter-kit-lisp
                       starter-kit-bindings
-                      starter-kit-ruby
+                      ;; starter-kit-ruby
                       starter-kit-eshell
 
                       ;; themes
@@ -44,7 +46,7 @@
                       browse-kill-ring
                       undo-tree
                       yasnippet
-                      
+
                       ;; utils
                       magit)
   "A list of packages to ensure are installed at launch.")
