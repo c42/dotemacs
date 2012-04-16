@@ -6,7 +6,6 @@
                       starter-kit
                       starter-kit-lisp
                       starter-kit-bindings
-                      ;; starter-kit-ruby
                       starter-kit-eshell
 
                       ;; themes
@@ -53,11 +52,7 @@
                       melpa)
   "A list of packages to ensure are installed at launch.")
 
-;; packages TODO: maxframe
-
-;; melpa packages TODO: ruby-electric, textmate
-
-;; bug TODO: rspec-mode should autoload
+;; packages TODO: helm or anything.el, projectile
 
 ;; custom TODO: ctags, maxframe on start
 
@@ -73,7 +68,9 @@
 (require 'environment)
 (require 'key-bindings)
 
-;;(require 'smooth-scrolling)
+(require 'maxframe)
+(require 'ruby-electric)
 (require 'duplicate-line)
 (require 'textmate)
 (textmate-mode)
+(add-hook 'window-setup-hook 'maximize-frame t)
