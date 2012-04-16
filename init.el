@@ -73,4 +73,5 @@
 (require 'duplicate-line)
 (require 'textmate)
 (textmate-mode)
+(ruby-electric-mode)
 (add-hook 'window-setup-hook 'maximize-frame t)
