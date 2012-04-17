@@ -74,5 +74,6 @@
 (require 'duplicate-line)
 (require 'textmate)
 (textmate-mode)
+(global-undo-tree-mode)
 (add-hook 'ruby-mode-hook 'ruby-electric-mode)
 (add-hook 'window-setup-hook 'maximize-frame t)
