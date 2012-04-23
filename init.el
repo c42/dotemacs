@@ -67,6 +67,7 @@
 (setq js-indent-level 2)
 (setq js2-basic-offset 2)
 (setq-default indent-tabs-mode nil)
+(setq scss-compile-at-save nil)
 
 (require 'environment)
 (require 'key-bindings)
