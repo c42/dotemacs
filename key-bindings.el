@@ -6,9 +6,9 @@
 ;; rspec
 (add-hook 'rspec-mode-hook
           (lambda () 
-            (local-set-key (kbd "A-r") 'rspec-verify)
-            (local-set-key (kbd "A-R") 'rspec-verify-single)
-            (local-set-key (kbd "A-C-<down>") 'rspec-toggle-spec-and-target)))
+            (local-set-key (kbd "s-r") 'rspec-verify)
+            (local-set-key (kbd "s-R") 'rspec-verify-single)
+            (local-set-key (kbd "s-C-<down>") 'rspec-toggle-spec-and-target)))
 
 ;; steve yegge's keybindings to match terminal
 (global-set-key "\C-w" 'backward-kill-word)
