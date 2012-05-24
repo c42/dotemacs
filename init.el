@@ -50,7 +50,8 @@
 
                       ;; utils
                       magit
-                      melpa)
+                      melpa
+                      todochiku)
   "A list of packages to ensure are installed at launch.")
 
 ;; packages TODO: helm or anything.el, projectile
