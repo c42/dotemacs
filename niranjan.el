@@ -6,3 +6,4 @@
 (color-theme-sanityinc-solarized-dark)
 (require 'auto-complete)
 (global-auto-complete-mode)
+(menu-bar-mode t)
