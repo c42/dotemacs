@@ -4,6 +4,6 @@
 (auto-package-install personal-packages)
 
 (color-theme-sanityinc-solarized-dark)
-(add-hook 'html-mode-hook 'turn-off-auto-fill)
+
 (menu-bar-mode t)
-(yas/global-mode 1)
+

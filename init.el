@@ -60,9 +60,6 @@
 
 (auto-package-install my-packages)
 
-;; show line numbers
-(global-linum-mode t)
-
 ;; tabs are 2 spaces
 (setq-default tab-width 2)
 (setq css-indent-offset 2)
@@ -80,5 +77,8 @@
 (require 'textmate)
 (textmate-mode)
 (global-undo-tree-mode)
+(global-linum-mode t)
+(yas/global-mode 1)
 (add-hook 'ruby-mode-hook 'ruby-electric-mode)
 (add-hook 'window-setup-hook 'maximize-frame t)
+(add-hook 'html-mode-hook 'turn-off-auto-fill)
