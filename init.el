@@ -26,6 +26,7 @@
 
                       ;; markup
                       haml-mode
+                      less-css-mode
                       sass-mode
                       scss-mode
                       markdown-mode
