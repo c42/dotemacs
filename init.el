@@ -78,6 +78,7 @@
 (require 'ruby-electric)
 (require 'duplicate-line)
 (require 'textmate)
+(require 'emacs-monk)
 (textmate-mode)
 (global-undo-tree-mode)
 (add-hook 'ruby-mode-hook 'ruby-electric-mode)
