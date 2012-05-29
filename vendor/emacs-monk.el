@@ -38,7 +38,7 @@
   (emacs-monk-trim (emacs-monk-trim s "^<") ">$"))
 
 (setq emacs-monk-allowed-prefixes '("C-" "M-" "S-" "A-" "s-"))
-(setq emacs-monk-blacklist '("C-up" "C-down"))
+(setq emacs-monk-blacklist '("C-up" "C-down" "C-right" "C-left"))
 
 (defun emacs-monk-show-teachings (kbd cmd)
   (when (< 1 (length kbd))
