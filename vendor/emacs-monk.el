@@ -29,24 +29,25 @@
 ;;; Code:
 
 (require 'todochiku)
-(defun trim (s regex)
+(defun emacs-monk-trim (s regex)
   (if (string-match regex s)
       (replace-match "" t t s)
     s))
 
-(defun trim-angles (s)
-  (trim (trim s "^<") ">$"))
+(defun emacs-monk-trim-angles (s)
+  (emacs-monk-trim (emacs-monk-trim s "^<") ">$"))
 
-(setq allowed-prefixes '("C-" "M-" "S-" "A-" "s-"))
+(setq emacs-monk-allowed-prefixes '("C-" "M-" "S-" "A-" "s-"))
+(setq emacs-monk-blacklist '("C-up" "C-down"))
 
-(defun show-teachings (kbd cmd)
+(defun emacs-monk-show-teachings (kbd cmd)
   (when (< 1 (length kbd))
     (let ((prefix (substring kbd 0 2)))
-      (when (member prefix allowed-prefixes)
+      (when (and (member prefix emacs-monk-allowed-prefixes) (not (member kbd emacs-monk-blacklist)))
         (todochiku-message kbd cmd "")))))
 
-(defun clean-inputs ()
-  (show-teachings (trim-angles (key-description (this-command-keys)))
+(defun emacs-monk-clean-inputs ()
+  (emacs-monk-show-teachings (emacs-monk-trim-angles (key-description (this-command-keys)))
                   (symbol-name this-command)))
 
 ;; another useful heuristic for which keystrokes to keep:
@@ -59,7 +60,7 @@
 
 (defun emacs-monk-flash-command ()
   (condition-case nil
-      (clean-inputs)
+      (emacs-monk-clean-inputs)
     ((debug error) nil)))
 
 (defun emacs-monk-off ()
