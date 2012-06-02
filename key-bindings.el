@@ -1,6 +1,7 @@
 
 ;; textmate
-(global-set-key (kbd "A-M-t") 'textmate-clear-cache)
+(global-set-key (kbd "A-M-t") 'textmate-clear-cache) ;; osx
+(global-set-key (kbd "s-M-t") 'textmate-clear-cache) ;; linux
 (global-set-key (kbd "M-t") 'textmate-goto-file)
 
 ;; rspec
