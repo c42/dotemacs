@@ -3,6 +3,7 @@
 (global-set-key (kbd "A-M-t") 'textmate-clear-cache) ;; osx
 (global-set-key (kbd "s-M-t") 'textmate-clear-cache) ;; linux
 (global-set-key (kbd "M-t") 'textmate-goto-file)
+(global-set-key (kbd "s-/") 'comment-or-uncomment-region-or-line)
 
 ;; rspec
 (add-hook 'rspec-mode-hook
