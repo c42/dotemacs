@@ -1,14 +1,16 @@
 
 ;; textmate
-(global-set-key (kbd "A-M-t") 'textmate-clear-cache)
+(global-set-key (kbd "A-M-t") 'textmate-clear-cache) ;; osx
+(global-set-key (kbd "s-M-t") 'textmate-clear-cache) ;; linux
 (global-set-key (kbd "M-t") 'textmate-goto-file)
+(global-set-key (kbd "s-/") 'comment-or-uncomment-region-or-line)
 
 ;; rspec
 (add-hook 'rspec-mode-hook
           (lambda () 
-            (local-set-key (kbd "A-r") 'rspec-verify)
-            (local-set-key (kbd "A-R") 'rspec-verify-single)
-            (local-set-key (kbd "A-C-<down>") 'rspec-toggle-spec-and-target)))
+            (local-set-key (kbd "s-r") 'rspec-verify)
+            (local-set-key (kbd "s-R") 'rspec-verify-single)
+            (local-set-key (kbd "s-C-<down>") 'rspec-toggle-spec-and-target)))
 
 ;; steve yegge's keybindings to match terminal
 (global-set-key "\C-w" 'backward-kill-word)

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# uuid: 520CA137-E4FC-4DB0-92DA-980DFE54A35B
+# key: mocw
+# contributor: Translated from textmate snippet by PROGRAM_NAME
+# name: mock_with
+## condition: "
+# --
+RSpec::Runner.configure do |config|
+	config.mock_with :${0:mocha|flexmock|rr}
+end

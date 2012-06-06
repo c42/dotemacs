@@ -26,6 +26,7 @@
 
                       ;; markup
                       haml-mode
+                      less-css-mode
                       sass-mode
                       scss-mode
                       markdown-mode
@@ -49,7 +50,8 @@
 
                       ;; utils
                       magit
-                      melpa)
+                      melpa
+                      todochiku)
   "A list of packages to ensure are installed at launch.")
 
 ;; packages TODO: helm or anything.el, projectile
@@ -57,9 +59,6 @@
 ;; custom TODO: ctags, maxframe on start
 
 (auto-package-install my-packages)
-
-;; show line numbers
-(global-linum-mode t)
 
 ;; tabs are 2 spaces
 (setq-default tab-width 2)
@@ -76,7 +75,12 @@
 (require 'ruby-electric)
 (require 'duplicate-line)
 (require 'textmate)
+(require 'emacs-monk)
 (textmate-mode)
 (global-undo-tree-mode)
+(global-linum-mode t)
+(yas/global-mode 1)
 (add-hook 'ruby-mode-hook 'ruby-electric-mode)
 (add-hook 'window-setup-hook 'maximize-frame t)
+(add-hook 'html-mode-hook 'turn-off-auto-fill)
+(put 'downcase-region 'disabled nil)

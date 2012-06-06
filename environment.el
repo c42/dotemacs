@@ -16,13 +16,7 @@
 ;; set up emacs shitty customizations UI
 (setq custom-file "~/.emacs.d/custom.el")
 (load-file "~/.emacs.d/custom.el")
-
-
-;; fix the command key to be meta -- old and busted
-(setq mac-option-key-is-meta nil)
-(setq mac-command-key-is-meta t)
-;; fix the command key to be meta -- new hotness
-(setq mac-option-modifier 'alt)
+(setq mac-option-modifier 'super)
 (setq mac-command-modifier 'meta)
 
 
