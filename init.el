@@ -23,6 +23,7 @@
 
                       ;; js
                       js2-mode
+                      coffee-mode
 
                       ;; markup
                       haml-mode
