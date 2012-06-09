@@ -6,11 +6,12 @@
 (global-set-key (kbd "s-/") 'comment-or-uncomment-region-or-line)
 
 ;; rspec
-(add-hook 'rspec-mode-hook
+(add-hook 'ruby-mode-hook
           (lambda () 
             (local-set-key (kbd "s-r") 'rspec-verify)
             (local-set-key (kbd "s-R") 'rspec-verify-single)
-            (local-set-key (kbd "s-C-<down>") 'rspec-toggle-spec-and-target)))
+            (local-set-key (kbd "s-C-<down>") 'rspec-toggle-spec-and-target)
+            (local-set-key rspec-key-command-prefix rspec-mode-keymap)))
 
 ;; steve yegge's keybindings to match terminal
 (global-set-key "\C-w" 'backward-kill-word)
