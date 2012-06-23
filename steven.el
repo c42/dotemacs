@@ -10,3 +10,4 @@
   (cd dir)
   (ffip-project-root))
 
+(require 'ascope)
