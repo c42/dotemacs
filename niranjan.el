@@ -3,6 +3,10 @@
 
 (auto-package-install personal-packages)
 
+(set-face-attribute 'default nil
+                    :family "Inconsolata"
+                    :height 200)
+
 (color-theme-sanityinc-solarized-dark)
 
 (menu-bar-mode t)
