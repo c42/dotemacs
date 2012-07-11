@@ -84,3 +84,4 @@
 (add-hook 'window-setup-hook 'maximize-frame t)
 (add-hook 'html-mode-hook 'turn-off-auto-fill)
 (put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
