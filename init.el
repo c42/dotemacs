@@ -23,6 +23,7 @@
 
                       ;; js
                       js2-mode
+                      coffee-mode
 
                       ;; markup
                       haml-mode
@@ -71,6 +72,7 @@
 (require 'environment)
 (require 'key-bindings)
 
+(require 'generate-tags)
 (require 'maxframe)
 (require 'ruby-electric)
 (require 'duplicate-line)
