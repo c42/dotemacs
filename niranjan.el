@@ -5,7 +5,7 @@
 
 (set-face-attribute 'default nil
                     :family "Inconsolata"
-                    :height 200)
+                    :height 160)
 
 (color-theme-sanityinc-solarized-dark)
 
