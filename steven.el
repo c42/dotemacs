@@ -1,7 +1,7 @@
 (require 'molokai-theme)
 
 (set-face-attribute 'default nil
-                    :family "Anonymous Pro"
+                    :family "Source Code Pro"
                     :height 160)
 
 (require 'find-file-in-project)
