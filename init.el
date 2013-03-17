@@ -7,6 +7,7 @@
                       starter-kit-lisp
                       starter-kit-bindings
                       starter-kit-eshell
+                      textmate
                       ;; themes
                       color-theme-sanityinc-solarized
                       molokai-theme
@@ -52,7 +53,9 @@
                       ;; utils
                       magit
                       melpa
-                      todochiku)
+                      todochiku
+                      multiple-cursors)
+
   "A list of packages to ensure are installed at launch.")
 
 ;; packages TODO: helm or anything.el, projectile
@@ -76,14 +79,14 @@
 (require 'maxframe)
 (require 'ruby-electric)
 (require 'duplicate-line)
-(require 'textmate)
 (require 'emacs-monk)
 (textmate-mode)
 (global-undo-tree-mode)
 (global-linum-mode t)
-(yas/global-mode 1)
+(yas-global-mode)
 (add-hook 'ruby-mode-hook 'ruby-electric-mode)
 (add-hook 'window-setup-hook 'maximize-frame t)
 (add-hook 'html-mode-hook 'turn-off-auto-fill)
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
+(put 'dired-find-alternate-file 'disabled nil)
